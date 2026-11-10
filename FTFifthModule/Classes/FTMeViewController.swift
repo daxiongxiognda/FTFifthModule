@@ -9,5 +9,10 @@ import Foundation
 import FTBase
 
 class FTMeViewController: BaseViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        prefersNavigationBarHidden = true
+        
+        addCenterLabel(text: "我的")
+    }
 }
